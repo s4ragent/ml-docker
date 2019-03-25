@@ -106,6 +106,9 @@ RUN $CONDA_DIR/bin/python -m pip install mplleaflet \
 # Useful data exploration libraries (for missing data and generating reports)
 					 missingno \
 					 pandas-profiling \
-					 s2sphere
+					 s2sphere \
+# Useful util kaggle feather-format
+                                         kaggle \
+					 feather-format
 # clean up pip cache
 RUN rm -rf /root/.cache/pip/*
