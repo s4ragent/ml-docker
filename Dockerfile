@@ -15,6 +15,7 @@ RUN conda install -c conda-forge --quiet --yes \
 
 #RUN $CONDA_DIR/bin/python -m pip install --upgrade mpld3
 RUN $CONDA_DIR/bin/python -m pip install kaggle \
-					 flake8
+					 flake8 \
+					 optuna
 # clean up pip cache
 RUN rm -rf /root/.cache/pip/*
